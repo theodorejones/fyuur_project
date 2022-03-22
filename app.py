@@ -204,7 +204,7 @@ def create_venue_submission():
     genres = request.form.getlist('genres')
     image_link = request.form['image_link']
     facebook_link = request.form['facebook_link']
-    website = request.form['website']
+    website_link = request.form['website']
     seeking_talent = True if 'seeking_talent' in request.form else False 
     seeking_description = request.form['seeking_description']
 
@@ -415,7 +415,7 @@ def create_artist_submission():
     genres = request.form.getlist('genres'),
     facebook_link = request.form['facebook_link']
     image_link = request.form['image_link']
-    website = request.form['website']
+    website_link = request.form['website']
     seeking_venue = True if 'seeking_venue' in request.form else False
     seeking_description = request.form['seeking_description']
 
